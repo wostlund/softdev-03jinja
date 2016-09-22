@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<HTML>
+  <head>
+    <style>
+      body {background-color: powderblue; font-family: helvetica;}
+      table {border: 1px solid black; border-collapse: collapse;}
+      th {padding: 5px; text-align: left;}
+      tr {border: 1px solid black;}
+    </style>
+    <title>Occupations in US</title>
+    <body>
+      <center>
+	<h1> Occupations in the US Workforce </h1>
+	<table>
+	  <tr> 
+	    <th>Occupation</th>
+	    <th>Percent of workforce</th>
+	  </tr>
+	  {% for fred in george %}
+	  <tr>
+	    <th>{{fred}}</th>
+	    <th>{{mike[fred]}}%</th>
+	  </tr>
+	  {% endfor %}
+	</table>
+	<h1>Randomly Selected Occupation: {{harry}}</h1>
+      </center>
+    </body>
+  </head>
+</HTML>
