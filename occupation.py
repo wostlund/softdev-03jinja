@@ -35,7 +35,7 @@ def trial():
         i = i + 1
     print(results)
 
-@app.route('/')
+@app.route('/occupations')
 def run():
     opener()
     a = chooser()
